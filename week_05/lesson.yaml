@@ -29,7 +29,7 @@
   Output: As you can see, the default separator is a blank space (sep = " "). But you can select another character, for example sep = "-"
   
 - Class: cmd_question
-  Output: Use the same arguments as before but also add the argument sep = "-" and see what happens. 
+  Output: Use the same arguments as before but also add the argument sep = "-" and see what happens. To see the code from before just press the arrow-up key in the console.
   CorrectAnswer: paste("The number pi is", pi, sep = "-")
   AnswerTests: omnitest(correctExpr='paste("The number pi is", pi, sep = "-")')
   Hint: Just type paste("The number pi is", pi, sep = "-")
@@ -42,9 +42,9 @@
 
 - Class: cmd_question
   Output: Use the same code but also add this time collapse = "" as last argument and see what happens. 
-  CorrectAnswer: paste("X", 1:5, sep = "_", collapse = "")
-  AnswerTests: omnitest(correctExpr='paste("X", 1:5, sep = "_", collapse = "")')
-  Hint: Just type paste("X", 1:5, sep = "_", collapse = "")
+  CorrectAnswer: paste("x", 1:5, sep = "_", collapse = "")
+  AnswerTests: omnitest(correctExpr='paste("x", 1:5, sep = "_", collapse = "")')
+  Hint: Just type paste("x", 1:5, sep = "_", collapse = "")
 
 - Class: text
   Output: As you can see, all the single strings were collapsed into on single string. In addition to paste(), there’s also the function paste0() which is the equivalent of paste(..., sep = "", collapse)
@@ -95,10 +95,10 @@
   Output: Now use the table() function with taiwan as argument. What will happen?
   CorrectAnswer: table(taiwan)
   AnswerTests: omnitest(correctExpr='table(taiwan)')
-  Hint: This one is easy, just use taiwan as argument in table()
+  Hint: This one is easy, just use taiwan as argument in the function table()
 
 - Class: cmd_question
-  Output: As you can see the case makes a difference. This time use taiwan as argument with tolower and add that together as argument in table
+  Output: As you can see the case makes a difference. This time use taiwan as argument with tolower and add that together as argument in the table function
   CorrectAnswer: table(tolower(taiwan))
   AnswerTests: omnitest(correctExpr='table(tolower(taiwan))')
   Hint: just use tolower(taiwan) as argument in table()
